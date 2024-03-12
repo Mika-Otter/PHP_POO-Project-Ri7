@@ -1,7 +1,3 @@
-<?php 
-include "../core/MainApp.php"
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,8 +11,13 @@ include "../core/MainApp.php"
     <?php endif; ?>
 </head>
 <body>
-    
-    <?php
+    <main>
+        <?php require $template; ?>
+    </main>
+</body>
+</html>
+<!-- 
+<?php
     if (isset($_POST['register'])||isset($_POST['subscribe'])) {
         include "../views/subscribe.php";
     } elseif (isset($_POST['backHome'])) {
@@ -24,6 +25,4 @@ include "../core/MainApp.php"
     } else {
         include "../views/home.php";
     }
-    ?>
-</body>
-</html>
+    ?> -->

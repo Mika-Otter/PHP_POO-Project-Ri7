@@ -1,8 +1,8 @@
-<?php 
+<?php
 
-require "../../core/MainApp.php";
+require "../models/connection.php";
 
-if (isset($_POST["subscribe"])) {
+function createUser($db) {
     require "../models/User.php";
     $email = $_POST['userEmail'];
     $userName = $_POST['userName'];
@@ -13,4 +13,5 @@ if (isset($_POST["subscribe"])) {
     $user = new User($email, $userName, $userPass, $userPassConfirm );
 
     $user->createUser($db);
-};
+}
+    
