@@ -1,16 +1,24 @@
 <section class="home">
-    <h2>Welcome Frrrd </h2>
-    <span>Le premier réseau social pour asocial.</span>
+    <div class="title">
+        <h2>Welcome,</h2>
+        <h2 id="homeTitle">to F<span>rrr</span>d</h2>
+        <span id="homeSpan">Le premier réseau mi-social.</span>
+    </div>
 
-    <div class="connect">
+    <form class="connect" method="post">
         <div class="connect__id">
-            <label for="userId">Adresse e-mail</label>
-            <input type="text" name="userId" class="connect__input"/>
-            <label for="userPass">Mot de passe</label>
-            <input type="password" name="userPass" class="connect__input"/>
+            <div class="connect__id__ctn">
+                <label for="userId">Adresse e-mail</label>
+                <input type="text" name="userId" class="connect__input"/>
+            </div>
+            <div class="connect__id__ctn">
+                <label for="userPass">Mot de passe</label>
+                <input type="password" name="userPass" class="connect__input"/>
+            </div>
         </div>
         <div class="connect__link">
-            <a>S'inscrire</a>
+            <button type="submit" name="connect" id="connectBtn">Se connecter</button>
+            <button type="submit" name="register" id="registerBtn">S'inscrire</button>
         </div>
-    </div>
+    </form>
 </section>

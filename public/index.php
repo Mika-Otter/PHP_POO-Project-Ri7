@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <?php
+    include "../views/home.php" 
+    ?>
 </body>
 </html>
