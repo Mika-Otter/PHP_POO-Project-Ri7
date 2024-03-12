@@ -1,3 +1,8 @@
+<?php 
+include "../core/MainApp.php"
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +17,7 @@
 <body>
     
     <?php
-    if (isset($_POST['register'])) {
+    if (isset($_POST['register'])||isset($_POST['subscribe'])) {
         include "../views/subscribe.php";
     } elseif (isset($_POST['backHome'])) {
         include "../views/home.php";

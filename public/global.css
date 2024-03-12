@@ -28,3 +28,28 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+.toast {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+}
+
+.toast-wrapper {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: #c03939;
+}
+
+.errorLine {
+    background-color: #eccfcf;
+}

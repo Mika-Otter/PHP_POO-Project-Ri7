@@ -1,3 +1,8 @@
+<?php
+include "../src/controllers/registerController.php"
+?>
+
+
 <section class="home">
     <div class="title">
         <h2>Welcome,</h2>
@@ -8,8 +13,8 @@
     <form class="subscribe" method="post">
         <div class="subscribe__id">
         <div class="subscribe__id__ctn">
-            <label for="userId">Adresse e-mail</label>
-            <input type="text" name="userId" class="subscribe__input"/>
+            <label for="userEmail">Adresse e-mail</label>
+            <input type="text" name="userEmail" class="subscribe__input"/>
         </div>    
         <div class="subscribe__id__ctn">
             <label for="userName">Nom d'utilisateur</label>
@@ -28,4 +33,16 @@
             <button type="submit" name="backHome" id="backHomeBtn">Retour à la page de connexion</a>
         </div>
 </form>
+<?php 
+            if(count($prompt) > 0){  
+                echo "<div class='toast-wrapper'>";
+                if(isset($prompt["success"])) echo "<p class='success toast'>" . $prompt["success"] . "</p>";
+                else{
+                    foreach($prompt["error"] as $error){
+                        echo "<p class='error toast'>$error</p>";
+                    }
+                }
+                echo "</div>";
+            }
+        ?>
 </section>
