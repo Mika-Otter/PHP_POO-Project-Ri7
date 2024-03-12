@@ -4,7 +4,7 @@
         <h2 id="homeTitle">to F<span>rrr</span>d</h2>
         <span id="homeSpan">Le premier réseau mi-social.</span>
     </div>
-
+    
     <form class="connect" method="post">
         <div class="connect__id">
             <div class="connect__id__ctn">

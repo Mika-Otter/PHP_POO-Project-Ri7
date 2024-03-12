@@ -45,12 +45,14 @@
     line-height: normal;
 }
 
-.connect {
+/*____________________________SUBSCRIBE_______________________*/
+
+.subscribe {
     position: absolute;
-    top: calc(50% - 15vh);
+    top: calc(50% - 22vh);
     left: calc(50% - 10vw);
     width: 20vw;
-    height: 28vh;
+    height: 44vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,7 +63,7 @@
     font-family: "Poppins";
 }
 
-.connect__id {
+.subscribe__id {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -72,7 +74,7 @@
     /* border: 2px solid red; */
 }
 
-.connect__id__ctn {
+.subscribe__id__ctn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,13 +83,13 @@
     /* border: 2px solid blue; */
 }
 
-.connect__id__ctn > label {
-    width: 100%;
+.subscribe__id__ctn > label {
+    width: 80%;
     text-align: left;
 }
 
-.connect__input {
-    width: calc(100% - 10px);
+.subscribe__input {
+    width: calc(80% - 10px);
     height: 3vh;
     padding-left: 10px;
     font-family: "Poppins";
@@ -99,7 +101,7 @@
     background-color: var(--white-color);
 }
 
-.connect__input:focus {
+.subscribe__input:focus {
     outline: none;
     border: 3px solid;
     border-image-slice: 1;
@@ -110,7 +112,7 @@
     border-image-source: var(--gradiant-color);
 }
 
-.connect__link {
+.subscribe__link {
     display: flex;
     width: 100%;
     margin-top: 1vh;
@@ -120,7 +122,7 @@
     flex-direction: column;
 }
 
-#registerBtn {
+#backHomeBtn {
     border: none;
     margin: 0;
     background-color: inherit;
@@ -131,7 +133,7 @@
     cursor: pointer;
 }
 
-#connectBtn {
+#subscribeBtn {
     border: none;
     margin-bottom: 1vh;
     background: var(--black-color);
@@ -144,7 +146,7 @@
     transition: 0.3s ease;
 }
 
-#connectBtn:hover {
+#subscribeBtn:hover {
     cursor: pointer;
     opacity: 0.2;
 }

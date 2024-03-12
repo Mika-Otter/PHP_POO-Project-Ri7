@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsBold";
+    src: url(Poppins-Bold.ttf);
+}
+
+:root {
+    --white-color: #f8f7f7;
+    --black-color: #110e0c;
+    --grey-color: #ebe9e8;
+    --purple-color: #a208eb;
+    --gradiant-color: linear-gradient(259deg, #a208eb 18.5%, #ff67e7 57.19%);
+    --fontSizeSmaller: clamp(0.5rem, 0.5rem + 0.6vw, 1.1rem);
+    --fontSizeSmall: clamp(0.6rem, 0.6rem + 0.7vw, 1.3rem);
+    --fontSizeMedium: clamp(0.9rem, 0.8rem + 1.1vw, 1.5rem);
+    --fontSizeBig: clamp(7rem, 7.5rem + 12vw, 10rem);
+    --square: 1vw;
+    --gap: 5px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
