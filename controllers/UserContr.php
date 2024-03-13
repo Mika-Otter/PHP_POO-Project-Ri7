@@ -14,7 +14,7 @@ class UserContr extends Model{
         if(!$query->execute()) {
             $query = null;
             $prompt = ["error"=>"failed to create user"];
-            header("Location: /POO_Project/");
+            header("Location: /POO_Project/home");
             var_dump($prompt);
             exit();
         }

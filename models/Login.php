@@ -5,14 +5,16 @@ class Login extends Model {
         $this->getConnection();
     }
 
-    public function tryToConnect($email) {
-        $sql = "SELECT * FROM " . $this->table . " WHERE email = ?";
+    public function tryToConnect($email, $password) {
+        $sql = "SELECT * FROM " . $this->table . " WHERE email = ? AND userPass = ?";
         $query = $this->_connexion->prepare($sql);
-        $query->execute([$email]);
+        $query->execute([$email, $password]);
         
         $user = $query->fetch(PDO::FETCH_ASSOC);
 
         if ($user) {
+            session_start();
+            $_SESSION["userName"] = $user["userName"];
             return true; // L'utilisateur existe, connexion réussie
         } else {
             return false; // L'utilisateur n'existe pas, connexion échouée

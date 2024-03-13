@@ -7,8 +7,10 @@ if (isset($_POST["connect"])) {
     include "../models/Login.php";
     $user = new Login();
 
-    if ($user->tryToConnect($loginEmail)) {
-        echo "Connection successful";
+    if ($user->tryToConnect($loginEmail, $loginPass)) {
+        var_dump($_SESSION["userName"]);
+        header("Location: /POO_Project/thread");
+
     } else {
         echo "Failed to connect";
     }

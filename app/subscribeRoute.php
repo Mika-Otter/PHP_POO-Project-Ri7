@@ -12,6 +12,7 @@ if(isset($_POST["subscribe"])) {
     $user = new User($userName, $userEmail, $userPass, $userPassConfirm);
     $user->createUser($userEmail, $userName, $userPass);
 
-    header("Location: /POO_Project/thread");
+    header("Location: /POO_Project/home");
+    echo "Success user added !";
     exit();
 }
