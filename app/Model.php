@@ -19,7 +19,7 @@ abstract class Model{
         try {
             $this->_connexion = new PDO("mysql:host=" . $this->dbhost . "; dbname=" . $this->dbname, $this->dbusername, $this->dbpass );
             $this->_connexion->exec("set names utf8");
-            echo "Connexion réussie";
+            echo "Connexion SUCCESS";
         } catch (PDOException $e) {
             echo "Error :" . $e->getMessage();
         }
