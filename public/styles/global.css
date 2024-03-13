@@ -16,7 +16,7 @@
     --gradiant-color: linear-gradient(259deg, #a208eb 18.5%, #ff67e7 57.19%);
     --fontSizeSmaller: clamp(0.5rem, 0.5rem + 0.6vw, 1.1rem);
     --fontSizeSmall: clamp(0.6rem, 0.6rem + 0.7vw, 1.3rem);
-    --fontSizeMedium: clamp(0.9rem, 0.8rem + 1.1vw, 1.5rem);
+    --fontSizeMedium: clamp(0.9rem, 0.8rem + 1.1vw, 1.7rem);
     --fontSizeBig: clamp(7rem, 7.5rem + 12vw, 10rem);
     --square: 1vw;
     --gap: 5px;

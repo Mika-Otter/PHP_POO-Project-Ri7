@@ -1,0 +1,54 @@
+@import url(global.css);
+
+main {
+    padding: 1vw;
+}
+h1 {
+    font-size: var(--fontSizeBig);
+    font-family: "PoppinsBold";
+    color: var(--black-color);
+}
+
+#homeTitle > span {
+    background: var(--gradiant-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "PoppinsBold";
+    font-weight: 700;
+    line-height: normal;
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.post__ctn {
+    font-family: "Poppins";
+    margin-top: 15px;
+    width: 10%;
+    height: auto;
+    padding: 1vw 1vw 0.3vw 1vw;
+    background-color: var(--grey-color);
+    border-radius: 33px;
+}
+
+.post__ctn > h2 {
+    margin-top: 0;
+    font-size: var(--fontSizeMedium);
+}
+
+.post__ctn > p {
+    font-size: var(--fontSizeSmall);
+}
+
+#link,
+#link:visited,
+#link:hover,
+#link:active,
+#link:focus {
+    color: var(--black-color);
+    text-decoration: none;
+}
