@@ -1,7 +1,3 @@
-<?php
-include "../src/controllers/registerController.php"
-?>
-
 
 <section class="home">
     <div class="title">
