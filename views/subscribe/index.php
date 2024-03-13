@@ -8,7 +8,7 @@
         <span id="homeSpan">Le premier réseau mi-social.</span>
     </div>
 
-    <form class="subscribe" action="/POO_Project/app/subscribeController.php" method="post">
+    <form class="subscribe" action="/POO_Project/app/subscribeRoute.php" method="post">
         <div class="subscribe__id">
         <div class="subscribe__id__ctn">
             <label for="userEmail">Adresse e-mail</label>

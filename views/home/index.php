@@ -15,16 +15,15 @@
         <h2 id="homeTitle">to F<span>rrr</span>d</h2>
         <span id="homeSpan">Le premier réseau mi-social.</span>
     </div>
-    
-    <form class="connect" action="/POO_Project/views/home/login.sub.php" method="post">
+    <form class="connect" method="post" action="/POO_Project/app/connectRoute.php">
         <div class="connect__id">
             <div class="connect__id__ctn">
-                <label for="userId">Adresse e-mail</label>
-                <input type="text" name="userId" class="connect__input"/>
+                <label for="loginEmail">Adresse e-mail</label>
+                <input type="text" name="loginEmail" class="connect__input"/>
             </div>
             <div class="connect__id__ctn">
-                <label for="userPass">Mot de passe</label>
-                <input type="password" name="userPass" class="connect__input"/>
+                <label for="loginPass">Mot de passe</label>
+                <input type="password" name="loginPass" class="connect__input"/>
             </div>
         </div>
         <div class="connect__link">
