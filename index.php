@@ -28,6 +28,10 @@ if ($params[0] !== "") {
     }
    
 } else {
+    require_once(ROOT. "controllers/Home.php");
+
+    $controller = new Home();
+    $controller->index();
 
 }
 

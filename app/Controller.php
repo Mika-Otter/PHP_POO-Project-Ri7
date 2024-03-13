@@ -5,7 +5,7 @@ abstract class Controller{
         $this->$model = new $model();
     }
 
-    public function render(string $file, string $layout, array $data = []){
+    public function render(string $file, array $data = []){
         extract($data);
         
         // On démarre le buffer
@@ -14,7 +14,6 @@ abstract class Controller{
         require_once ROOT."views/".strtolower(get_class($this))."/".$file.".php";
 
         $content = ob_get_clean(); // récupère tout ce qui est chargé dans le buffer
-
-        require_once ROOT."views/layouts/".$layout.".php";
+        require_once ROOT."views/layouts/default.php";
     }
 }

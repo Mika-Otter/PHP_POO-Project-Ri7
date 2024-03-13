@@ -4,7 +4,7 @@ class Thread extends Controller {
         $this->loadModel("Post");
         $thread = $this->Post->getAll();
         
-        $this->render("index",  "default", compact("thread")); //same than ["thread" => $thread]
+        $this->render("index", compact("thread")); //same than ["thread" => $thread]
     }
 
     public function lire($id) {
