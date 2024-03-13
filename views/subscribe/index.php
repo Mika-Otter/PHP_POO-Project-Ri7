@@ -1,4 +1,6 @@
-
+<head>
+    <link rel="stylesheet" href="./public/styles/subscribe.css">
+</head>
 <section class="home">
     <div class="title">
         <h2>Welcome,</h2>
@@ -6,7 +8,7 @@
         <span id="homeSpan">Le premier réseau mi-social.</span>
     </div>
 
-    <form class="subscribe" method="post">
+    <form class="subscribe" action="/POO_Project/app/subscribeController.php" method="post">
         <div class="subscribe__id">
         <div class="subscribe__id__ctn">
             <label for="userEmail">Adresse e-mail</label>
@@ -25,11 +27,11 @@
             <input type="password" name="userPassConfirm" class="subscribe__input"/>
         </div>
         <div class="subscribe__link">
-            <button type="submit" name="subscribe" id="subscribeBtn">S'inscrire</a>
-            <button type="submit" name="backHome" id="backHomeBtn">Retour à la page de connexion</a>
+            <button type="submit" name="subscribe" id="subscribeBtn">S'inscrire</button>
+            <span><a href="/POO_Project">Retour à la page de connexion</a></span>
         </div>
 </form>
-<?php 
+<!-- <?php 
             if(count($prompt) > 0){  
                 echo "<div class='toast-wrapper'>";
                 if(isset($prompt["success"])) echo "<p class='success toast'>" . $prompt["success"] . "</p>";
@@ -40,5 +42,5 @@
                 }
                 echo "</div>";
             }
-        ?>
+        ?> -->
 </section>

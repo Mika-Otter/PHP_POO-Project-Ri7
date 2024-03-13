@@ -1,13 +1,11 @@
-<?php 
-// Générer une constante qui contient le chemin vers index.php
+<?php
 define("ROOT", str_replace("index.php", "", $_SERVER["SCRIPT_FILENAME"]));
-
 require_once(ROOT."app/Model.php");
 require_once(ROOT."app/Controller.php");
 
 //On sépare les paramètres
 $params = explode("/", $_GET['p']);
-$prompt = [];
+$prompt = ["success" => [], "error" => []];
 
 if ($params[0] !== "") {
     $controller = ucfirst($params[0]);

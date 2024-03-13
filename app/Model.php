@@ -13,7 +13,7 @@ abstract class Model{
     public $table;
     public $id;
 
-    public function getConnection() {
+    protected function getConnection() {
         $this->_connexion = null;
 
         try {

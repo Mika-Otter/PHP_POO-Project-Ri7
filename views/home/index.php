@@ -16,7 +16,7 @@
         <span id="homeSpan">Le premier réseau mi-social.</span>
     </div>
     
-    <form class="connect" method="post">
+    <form class="connect" action="/POO_Project/views/home/login.sub.php" method="post">
         <div class="connect__id">
             <div class="connect__id__ctn">
                 <label for="userId">Adresse e-mail</label>
@@ -29,7 +29,7 @@
         </div>
         <div class="connect__link">
             <button type="submit" name="connect" id="connectBtn">Se connecter</button>
-            <span><a href="/subscribe">S'inscrire</a></span>
+            <span><a href="/POO_Project/subscribe">S'inscrire</a></span>
         </div>
     </form>
 </section>
