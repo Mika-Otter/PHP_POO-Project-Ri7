@@ -20,4 +20,5 @@ class UserContr extends Model{
         }
         return true;
     }
+    
 }

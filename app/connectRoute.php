@@ -8,10 +8,7 @@ if (isset($_POST["connect"])) {
     $user = new Login();
 
     if ($user->tryToConnect($loginEmail, $loginPass)) {
-        var_dump($_SESSION["userName"]);
-        echo session_id();
         header("Location: /POO_Project/thread");
-
     } else {
         echo "Failed to connect";
     }

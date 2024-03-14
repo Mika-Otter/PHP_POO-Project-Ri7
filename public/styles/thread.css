@@ -36,6 +36,7 @@ h1 {
 
 .post__ctn {
     font-family: "Poppins";
+    position: relative;
     margin-top: 15px;
     width: 10%;
     height: auto;
@@ -60,6 +61,66 @@ h1 {
 #link:focus {
     color: var(--black-color);
     text-decoration: none;
+}
+
+.action {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 1.3vw;
+    height: 5vh;
+}
+
+.action > .modify,
+.action > .delete {
+    width: 70%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action > .modify {
+    border: 3px solid var(--black-color);
+}
+
+.action > .modify > span {
+    margin-top: -2px;
+    text-align: center;
+    line-height: 0px;
+    height: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.action > .modify > span:hover {
+    letter-spacing: 2px;
+}
+
+.action > .delete {
+    border: 3px solid var(--purple-color);
+}
+
+.action > .delete > span {
+    transform: rotate(45deg);
+    line-height: 0px;
+    height: 10px;
+    line-height: 10px;
+    font-size: 2rem;
+    color: var(--purple-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.action > .delete > span:hover {
+    transform: rotate(135deg);
 }
 
 .post__add {
