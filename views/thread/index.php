@@ -27,4 +27,8 @@ session_start();
        
     </form>
 </div>
+<div class="user">
+    <div class="user__logout">+</div>
+    <div class="user__profil"><a href="/POO_Project/app/logout.php"><?= strtoupper(substr($_SESSION["userName"], 0, 1)); ?></a></div>
+</div>
 </section>

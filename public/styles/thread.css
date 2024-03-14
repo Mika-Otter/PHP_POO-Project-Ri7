@@ -130,3 +130,53 @@ h1 {
     color: var(--white-color);
     cursor: pointer;
 }
+
+.user {
+    position: absolute;
+    display: flex;
+    top: 1vw;
+    right: 1vw;
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.user__profil,
+.user__logout {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    font-family: "PoppinsBold";
+    font-size: 1.5vw;
+}
+.user__logout {
+    z-index: 1;
+    border: 6px solid var(--purple-color);
+    transform: rotate(45deg);
+    color: var(--purple-color);
+}
+
+.user__profil {
+    z-index: 3;
+    background: var(--gradiant-color);
+    color: var(--white-color);
+    transition: 0.4s ease-in-out;
+}
+
+.user__profil:hover {
+    opacity: 0;
+}
+
+a,
+a:active,
+a:focus,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}

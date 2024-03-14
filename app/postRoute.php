@@ -11,6 +11,7 @@ if (isset($_POST["addPost"])) {
 
     $post = new PostContr();
     $post->addPost($titlePost, $contentPost, $authorPost);
+    header("Location: /POO_Project/thread");
     exit();
 
 }
