@@ -17,7 +17,6 @@ if ($params[0] !== "") {
     $controller = new $controller();
 
     if(method_exists($controller, $action)) {
-        //on va vérifier si il existe d'autres paramètres 
         unset($params[0]); // on vide les paramètres existants 
         unset($params[1]);
         call_user_func_array([$controller, $action], $params); //on va ainsi pouvoir gérer un nombre infini de paramètres

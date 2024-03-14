@@ -15,7 +15,6 @@ class PostContr extends Model {
             $query = null;
             echo "ARRRRH";
             $prompt = ["error" => "failed to add new post"];
-            // header("Location: /POO_Project/thread");
             exit();
         }
         return true;
@@ -29,7 +28,6 @@ class PostContr extends Model {
             $query = null;
             echo "ARRRRH NEIN";
             $prompt = ["error" => "failed to delete post"];
-            // header("Location: /POO_Project/thread");
             exit();
         }
         return true;
@@ -44,7 +42,6 @@ class PostContr extends Model {
             $query = null;
             echo "ARRRRH NEIN NEIN";
             $prompt = ["error" => "failed to delete post"];
-            // header("Location: /POO_Project/thread");
             exit();
         }
         return true;

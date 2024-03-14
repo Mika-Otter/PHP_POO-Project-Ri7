@@ -24,7 +24,7 @@
 }
 
 #homeSpan {
-    display: inline-block; /* ou display: block; */
+    display: inline-block;
     margin-top: 3vh;
     font-family: "Poppins";
     font-size: var(--fontSizeSmall);
@@ -71,7 +71,6 @@
     font-size: var(--fontSizeSmall);
     font-weight: 400;
     text-transform: uppercase;
-    /* border: 2px solid red; */
 }
 
 .subscribe__id__ctn {
@@ -80,7 +79,6 @@
     align-items: center;
     width: 80%;
     height: 7vh;
-    /* border: 2px solid blue; */
 }
 
 .subscribe__id__ctn > label {

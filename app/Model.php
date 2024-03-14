@@ -1,6 +1,5 @@
 <?php 
 abstract class Model{
-    // Informations de base de données 
     private $dbhost = "localhost";
     private $dbname = "poo_project";
     private $dbusername = "root";
@@ -9,7 +8,6 @@ abstract class Model{
     // Propriété contenant la connexion 
     protected $_connexion;
 
-    // Propriété contenant les informations de requêtes
     public $table;
     public $id;
 

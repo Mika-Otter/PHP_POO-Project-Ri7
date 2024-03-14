@@ -41,8 +41,7 @@ if(isset($_POST['update'])) {
     $newContent = $_POST["contentModify"];
     session_start();
     $id = $_SESSION["modify"];
-   
-
+    
     $modify = new PostContr();
     $modify->updatePost($id, $newTitle, $newContent);
     $_SESSION["modify"] = "";

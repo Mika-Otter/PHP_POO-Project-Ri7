@@ -15,9 +15,9 @@ class Login extends Model {
         if ($user) {
             session_start();
             $_SESSION["userName"] = $user["userName"];
-            return true; // L'utilisateur existe, connexion réussie
+            return true; 
         } else {
-            return false; // L'utilisateur n'existe pas, connexion échouée
+            return false;
         }
     }
 }
