@@ -8,7 +8,6 @@ class PostContr extends Model {
     }
 
     public function addPost($postTitle, $postContent, $postAuthor){
-        echo "hello baby";
         $sql = 'INSERT INTO ' . $this->table . ' (title, content, author) VALUES ("'.$postTitle.'","' .$postContent. '","'.$postAuthor.'")';
         $query = $this->_connexion->prepare($sql);
 
@@ -38,12 +37,12 @@ class PostContr extends Model {
     }
 
     public function updatePost($id, $newTitle, $newContent) {
-        $sql = "UPDATE " . $this->table . " SET title = '" .$newTitle. "', content = '" . $newContent . "' WHERE ID = " . $id;
+        $sql = 'UPDATE ' . $this->table . ' SET title = "' .$newTitle. '", content = "' . $newContent . '" WHERE ID = ' . $id;
         $query = $this->_connexion->prepare($sql);
 
         if(!$query->execute()) {
             $query = null;
-            echo "ARRRRH NEIN";
+            echo "ARRRRH NEIN NEIN";
             $prompt = ["error" => "failed to delete post"];
             // header("Location: /POO_Project/thread");
             exit();

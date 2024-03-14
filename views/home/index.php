@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Network - Ri7</title>
-    <link rel="stylesheet" href="./public/styles/style.css">
+    <link rel="stylesheet" href="./public/styles/home.css">
 </head>
 <body>
-    <main>
-    </main>
+<main>
     <section class="home">
     <div class="title">
         <h2>Welcome,</h2>
@@ -32,5 +31,6 @@
         </div>
     </form>
 </section>
+</main>
 </body>
 </html>

@@ -22,6 +22,17 @@
     --gap: 5px;
 }
 
+@media screen and (max-width: 1700px) {
+    :root {
+        --fontSizeSmaller: clamp(0.3rem, 0.3rem + 0.4vw, 0.7rem);
+        --fontSizeSmall: clamp(0.4rem, 0.4rem + 0.5vw, 1rem);
+        --fontSizeMedium: clamp(0.7rem, 0.6rem + 0.9vw, 1.5rem);
+        --fontSizeBig: clamp(5rem, 5rem + 9vw, 7rem);
+        --square: 1vw;
+        --gap: 5px;
+    }
+}
+
 html,
 body {
     margin: 0;

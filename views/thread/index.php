@@ -11,16 +11,16 @@ session_start();
 <?php foreach($thread as $post) : ?>
     <div class="post__ctn">
     <?php if ($_SESSION["modify"] == $post["ID"]) : ?>
-        <form action="/POO_Project/app/postRoute.php" method="post">
+        <form  id="modifyForm" action="/POO_Project/app/postRoute.php" method="post" >
                 <input type="text" name="titleModify" value="<?= $post["title"] ?>" />
-                <input type="text" name="contentModify" value="<?= $post["title"] ?>" />
-                <button type="submit" name="update" id="modifyBtn">Modifier</button>
+                <textarea name="contentModify"><?= $post["title"] ?></textarea>
+                <button  id="modifyBtn" type="submit" name="update">Modifier</button>
             </form>
         <?php else: ?>
         <h2> <a id="link" href="/POO_Project/thread/lire/<?= $post["ID"] ?>"><?= $post["title"]?> </a></h2> 
             <p><?= $post["content"]?></p>
-            <span><?= $post["author"] ?></span>
-            <span><?= $post["date_created"] ?></span>
+            <span id="author"><?= $post["author"] ?></span>
+            <span  id="date"><?= $post["date_created"] ?></span>
             <?php if ($_SESSION["userName"] == $post["author"] && $_SESSION["modify"] == "") : ?>
             <div class="action">
                 <div class="modify">

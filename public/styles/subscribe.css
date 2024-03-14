@@ -133,6 +133,15 @@
     cursor: pointer;
 }
 
+a,
+a:visited,
+a:active {
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+
 #subscribeBtn {
     border: none;
     margin-bottom: 1vh;

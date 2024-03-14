@@ -3,6 +3,8 @@
 /*__________________________________HOME________________________________*/
 
 .home {
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 100vh;
     background-color: var(--white-color);
@@ -118,6 +120,16 @@
     justify-content: center;
     gap: var(--gap);
     flex-direction: column;
+}
+
+a,
+a:active,
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 #registerBtn {

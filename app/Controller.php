@@ -7,7 +7,6 @@ abstract class Controller{
 
     public function render(string $file, array $data = []){
         extract($data);
-        
         // On démarre le buffer
         ob_start(); // commence à intercepter tous les échos
 

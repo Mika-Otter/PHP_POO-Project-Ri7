@@ -13,6 +13,5 @@ if(isset($_POST["subscribe"])) {
     $user->createUser($userEmail, $userName, $userPass);
 
     header("Location: /POO_Project/home");
-    echo "Success user added !";
     exit();
 }
