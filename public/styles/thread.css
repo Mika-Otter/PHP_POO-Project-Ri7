@@ -1,12 +1,19 @@
 @import url(global.css);
 
-main {
-    padding: 1vw;
+section {
+    position: relative;
+
+    display: flex;
+    width: 99%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
 }
 h1 {
     font-size: var(--fontSizeBig);
     font-family: "PoppinsBold";
     color: var(--black-color);
+    margin: 0;
 }
 
 #homeTitle > span {
@@ -22,7 +29,9 @@ h1 {
 .post {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    width: 100%;
 }
 
 .post__ctn {
@@ -51,4 +60,73 @@ h1 {
 #link:focus {
     color: var(--black-color);
     text-decoration: none;
+}
+
+.post__add {
+    position: absolute;
+    bottom: 10vh;
+    width: 40%;
+    height: 20%;
+}
+
+#formAdd {
+    width: 100%;
+    height: 20vh;
+}
+
+.label__tellUs {
+    font-family: "Poppins";
+    font-size: var(--fontSizeMedium);
+}
+
+.post__content {
+    display: flex;
+    height: 18vh;
+    padding-top: 1.5vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grey-color);
+    border-radius: 0 0 3rem 3rem;
+    outline: none;
+    border: 3px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-image-source: var(--gradiant-color);
+}
+
+#title,
+#textarea {
+    width: 90%;
+    background-color: inherit;
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    font-family: "Poppins";
+}
+
+#title {
+    font-size: var(--fontSizeMedium);
+}
+
+#textarea {
+    font-size: var(--fontSizeSmall);
+    height: 60%;
+}
+
+.post__content > button {
+    font-family: "PoppinsBold";
+    text-transform: uppercase;
+    border-radius: 3rem;
+    margin: 20px;
+    width: 90%;
+    height: 4vh;
+    border: none;
+    font-size: var(--fontSizeSmall);
+    background: var(--gradiant-color);
+    color: var(--white-color);
+    cursor: pointer;
 }
