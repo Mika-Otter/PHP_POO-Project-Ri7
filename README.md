@@ -13,7 +13,7 @@
 
 Ouvrez un terminal et exécutez la commande suivante pour cloner le dépôt sur votre machine locale :
 
-```
+```bash
 git clone https://github.com/Mika-Otter/PHP_POO-Project-Ri7.git
 ```
 
@@ -26,13 +26,13 @@ git clone https://github.com/Mika-Otter/PHP_POO-Project-Ri7.git
 
 - Connectez-vous à votre serveur MySQL et créez une base de données pour le projet :
 
-```
+```sql
 CREATE DATABASE nom_de_votre_base_de_donnees;
 ```
 
 - Importez les tables et les données en utilisant le fichier SQL fourni (poo_project_database.sql à la racine du projet) :
 
-```
+```sql
     mysql -u votre_utilisateur -p nom_de_votre_base_de_donnees < poo_project_database.sql
 ```
 
