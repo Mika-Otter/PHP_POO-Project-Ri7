@@ -30,10 +30,10 @@ git clone https://github.com/Mika-Otter/PHP_POO-Project-Ri7.git
 CREATE DATABASE nom_de_votre_base_de_donnees;
 ```
 
-- Importez les tables et les données en utilisant le fichier SQL fourni (fichier SQL à la racine du projet) :
+- Importez les tables et les données en utilisant le fichier SQL fourni (poo_project_database.sql à la racine du projet) :
 
 ```bash
-    mysql -u votre_utilisateur -p nom_de_votre_base_de_donnees < chemin_vers_fichier.sql
+    mysql -u votre_utilisateur -p nom_de_votre_base_de_donnees < poo_project_database.sql
 ```
 
 ### 4. Configurer les paramètres de connexion à la base de données
